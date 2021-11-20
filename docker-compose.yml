@@ -10,7 +10,7 @@ services:
   website:
     image: php:apache
     volumes:
-      - website: /var/www/html
+      - ./website:/var/www/html
     ports:
       - 5001:80
     depends_on:
